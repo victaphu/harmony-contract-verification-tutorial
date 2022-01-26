@@ -1,0 +1,24 @@
+{
+  "name": "harmony-contract-verification-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "https://gitpkg.now.sh/victaphu/hardhat/packages/hardhat-etherscan?master",
+    "@openzeppelin/contracts": "^4.4.2",
+    "dotenv": "^14.2.0",
+    "hardhat": "^2.8.3"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@openzeppelin/contracts-upgradeable": "^4.4.2",
+    "@openzeppelin/hardhat-upgrades": "^1.13.0",
+    "ethers": "^5.5.3"
+  }
+}
