@@ -8,6 +8,7 @@ Prerequisites
 To begin  
 - npm install
 - npx hardhat compile
+- create a .env file and add *PRIVATE_KEY* property, this is your well-funded ONE wallet which will be used to deploy the smart contracts
 - npx hardhat run --network harmony scripts/deployContractTest.js  
 
 > Record the output of the deployed smart contract address, this will be used for verification
@@ -62,4 +63,13 @@ Successfully verified contract SimpleToken on Etherscan.
 https://explorer.harmony.one/address/0x4eBb2a1714384d54Dc287B9FbA1c8D4639717d43#code
 ```
 > Here is an example of the deployed and verified smart contract: [verified](https://explorer.harmony.one/address/0x4eBb2a1714384d54Dc287B9FbA1c8D4639717d43#code)
+
+## Troubleshooting
+I'll update this as more people face challenges when verifying contracts.
+### General Issues
+Missing dist directory in hardhat-etherscan
+As we move to push a PR to hardhat, I had to remove the dist directory from hardhat. You can 
+
+### Windows Users
+Disable the longpathnames limit by following the instructions in [this link](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd)
 
