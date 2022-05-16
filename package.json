@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nomiclabs/hardhat-etherscan": "https://gitpkg.now.sh/victaphu/hardhat/packages/hardhat-etherscan?master",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@openzeppelin/contracts": "^4.4.2",
     "dotenv": "^14.2.0",
     "hardhat": "^2.8.3"

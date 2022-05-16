@@ -31,6 +31,11 @@ module.exports = {
       url: "https://harmony-0-rpc.gateway.pokt.network",
       accounts: [process.env.PRIVATE_KEY]
     },
+    harmonyTest: {
+      // url: "https://api.s0.t.hmny.io",
+      url: "https://api.s0.b.hmny.io",
+      accounts: [process.env.PRIVATE_KEY]
+    },
   },
   etherscan: {
     apiKey: {
