@@ -45,6 +45,8 @@ module.exports = {
     apiKey: {
       harmony: 'your API key',
       harmonyDev: 'your API key',
+      harmonyTest: 'your API key',
+
     }
   }
 

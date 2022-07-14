@@ -88,7 +88,7 @@ Edit node_modules/@nomiclabs/hardhat-etherscan/dist/src/ChainConfig.js add the f
     harmonyDev: {
         chainId: 1666900000,
         urls: {
-            apiURL: "http://ctrver.t.hmny.io/verify?network=devnet",
+            apiURL: "https://ctrver.b.hmny.io/verify?network=devnet",
             browserURL: "https://api.s0.ps.hmny.io",
         },
     },
