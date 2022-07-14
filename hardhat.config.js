@@ -36,10 +36,15 @@ module.exports = {
       url: "https://api.s0.b.hmny.io",
       accounts: [process.env.PRIVATE_KEY]
     },
+    harmonyDev: {
+      url: "https://api.s0.ps.hmny.io",
+      accounts: [process.env.PRIVATE_KEY]
+    }
   },
   etherscan: {
     apiKey: {
-      harmony: 'your API key'
+      harmony: 'your API key',
+      harmonyDev: 'your API key',
     }
   }
 

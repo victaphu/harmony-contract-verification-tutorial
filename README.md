@@ -73,3 +73,43 @@ As we move to push a PR to hardhat, I had to remove the dist directory from hard
 ### Windows Users
 Disable the longpathnames limit by following the instructions in [this link](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd)
 
+
+
+
+
+
+
+# NOTE: For Devnet support
+
+### Step 1:
+Edit node_modules/@nomiclabs/hardhat-etherscan/dist/src/ChainConfig.js add the following under harmonyTest:  
+```
+
+    harmonyDev: {
+        chainId: 1666900000,
+        urls: {
+            apiURL: "http://ctrver.t.hmny.io/verify?network=devnet",
+            browserURL: "https://api.s0.ps.hmny.io",
+        },
+    },
+```
+
+### Step 2:  
+In your hardhat.config.js file add the following:  
+```
+    harmonyDev: {
+      url: "https://api.s0.ps.hmny.io",
+      accounts: [process.env.PRIVATE_KEY]
+    }
+```
+
+### Step 3:  
+In the same hardhat.config.js file add the following to your etherscan api key config (API key is not required, you can use any string):  
+```
+  etherscan: {
+    apiKey: {
+      harmony: 'your API key',
+      harmonyDev: 'your API key',
+    }
+  }
+```
